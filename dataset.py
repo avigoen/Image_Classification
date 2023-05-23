@@ -42,6 +42,8 @@ def test_dimensionality_reduction(components):
     # Print the cumulative explained variance
     print("Cumulative explained variance ratio:",
           np.cumsum(pca.explained_variance_ratio_))
+    
+    return pca
 
 
 def get_dimensionlly_reduced(needed, components=100):
